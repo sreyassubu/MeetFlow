@@ -19,7 +19,7 @@ import { AuthContext } from '../contexts/AuthContext';
 import server_url from '../environment';
 
 //Backend socket.io server
-const server_url = `${server_url}`;
+const server_Url = `${server_url}`;
 
 const connections = {};
 
@@ -281,7 +281,7 @@ let gotMessageFromServer = (fromId, message)=>{
 
 const connectToSocketServer = ()=>{
   //Connect to backend
-  socketRef.current = io.connect(server_url,{secure:false});
+  socketRef.current = io.connect(server_Url,{secure:false});
 
   socketRef.current.on('signal',gotMessageFromServer);
 

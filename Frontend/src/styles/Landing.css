@@ -1,0 +1,145 @@
+.landingPageContainer{
+  width: 100vw;
+  height: 100vh;
+  background: url("../public/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  
+}
+
+.landingPageContainer nav{
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landingPageContainer nav h2{
+  font-size: 1.8rem;
+  font-weight: 500;
+
+}
+
+.landingPageContainer nav .nav-list{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.landingPageContainer nav .nav-list a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.landingMainContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer >div:nth-child(1){
+  font-size: 2rem;
+}
+
+.landingMainContainer >div:nth-child(1) div[role='button']{
+  background-color: #D97500;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 20px;
+  margin-top: 1.9rem;
+}
+
+.landingMainContainer >div:nth-child(1) div[role='button'] a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+
+.landingMainContainer >div:nth-child(2) img{
+  height: 70vh;
+  width: auto;
+  margin-top: 15%;
+}
+
+/* ===========================
+   Mobile (768px and below)
+=========================== */
+
+@media (max-width: 768px) {
+
+  .landingPageContainer{
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+  }
+
+  /* Navbar */
+
+  .landingPageContainer nav{
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .landingPageContainer nav h2{
+    font-size: 1.6rem;
+  }
+
+  .landingPageContainer nav .nav-list{
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .landingPageContainer nav .nav-list a{
+    font-size: 1rem;
+  }
+
+  /* Main */
+
+  .landingMainContainer{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .landingMainContainer > div:nth-child(1){
+    font-size: 1.2rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) h1{
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .landingMainContainer > div:nth-child(1) p{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) div[role="button"]{
+    margin: 2rem auto 0;
+  }
+
+  .landingMainContainer > div:nth-child(1) div[role="button"] a{
+    font-size: 1.2rem;
+  }
+
+  .landingMainContainer > div:nth-child(2) img{
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+    margin-top: 0;
+  }
+}

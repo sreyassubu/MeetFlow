@@ -59,7 +59,7 @@ export default function History() {
                             MeetingCode: {meeting.meetingCode}
                         </Typography>
                         <Typography sx={{mb:1.5}} color='text.secondary'>
-                            Date: {meeting.date}
+                            Date: {formatDate(meeting.date)}
                         </Typography>
                     </CardContent>
                 </Card>

@@ -16,9 +16,11 @@ import SendIcon from '@mui/icons-material/Send';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../contexts/AuthContext';
+import server_url from '../environment';
+import server_url from '../environment';
 
 //Backend socket.io server
-const server_url = "http://localhost:3000";
+const server_url = `${server_url}`;
 
 const connections = {};
 
